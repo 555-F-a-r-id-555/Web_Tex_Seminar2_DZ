@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUs</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <header class="header center">
+        <nav>
+            <ul class="ul">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="./about_us.html">О нас</a></li>
+                <li><a href="./feedback.html">Оставить отзыв</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main center">
+        <h1 class="h1">Оставить заявку</h1>
+
+        <form class="form " action="http://www.example/com/review.php" method="get">
+            <fieldset class="field1">
+                <legend>Данные пользовотеля:</legend>
+                <label>
+                    Имя:
+                    <input type="text" name="user_name" placeholder="Введите ваше имя" />
+                </label>
+                <br />
+                <label>
+                    Email:
+                    <input type="email" name="user_email" placeholder="Введите ваш email" />
+                </label>
+                <br />
+            </fieldset>
+            <br />
+            <fieldset class="field2">
+                <legend>Ваше мнение:</legend>
+                <p>
+                    <label for="hear-about"> Как вы узнали о нас ? </label>
+                    <select name="referrer" id="hear-about">
+                        <option value="google">Google</option>
+                        <option value="friends">От друзей</option>
+                        <option value="advert">Реклама</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </p>
+                <p>
+                    Поситите ли вы наш сайт снова ?
+                    <br />
+                    <label>
+                        <input type="radio" name="rating" value="yes" />
+                        Да
+                    </label>
+
+                    <label>
+                        <input type="radio" name="rating" value="no" />
+                        Нет
+                    </label>
+
+                    <label>
+                        <input type="radio" name="rating" value="mabye" />
+                        Возможно
+                    </label>
+                </p>
+                <p>
+                    <label for="comments"> Коментарий: </label>
+                    <br />
+                    <textarea name="textarea" id="textarea" cols="30" rows="10"
+                        placeholder="Оставьте ваш комментарий"></textarea>
+                </p>
+                <label>
+                    <input type="checkbox" />
+                    Я хочу получать рассылку с нового сайта.
+                </label>
+                <br />
+                <input type="submit" name="submit" id="submit" />
+            </fieldset>
+        </form>
+
+
+    </main>
+
+
+</body>
+
+</html>
